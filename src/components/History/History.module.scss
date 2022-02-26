@@ -1,0 +1,178 @@
+.history {
+  max-width: 1170px;
+  margin: 120px auto 0 auto;
+}
+
+.text {
+  max-width: 418px;
+  font-weight: normal;
+  margin: 30px auto 0 auto;
+  font-size: 20px;
+  line-height: 142%;
+  text-align: center;
+  color: #a6a6a6;
+}
+
+.cardGroup {
+  margin: 75px 0 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  margin: 25px 0;
+  height: 567px;
+  box-sizing: border-box;
+  padding: 60px;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @for $count from 1 to 4 {
+    &:nth-child(#{$count}) {
+      background: linear-gradient(
+          270deg,
+          rgba(0, 0, 0, 0) 0.01%,
+          rgba(0, 0, 0, 0.2) 100%
+        ),
+        url("./../../assets/story/story photo-" + $count + ".jpg")
+          center
+          no-repeat;
+      background-size: auto 100%;
+      transition: background-size 300ms ease;
+    }
+  }
+}
+
+.cardTitle {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 122%;
+  color: #ffffff;
+  flex-basis: 43px;
+}
+
+.cardBody {
+  font-weight: normal;
+  margin: 37px 0 0 0;
+  flex-grow: 1;
+  font-size: 20px;
+  line-height: 142%;
+  color: #fff;
+  max-width: 554px;
+}
+
+.cardFooter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardLink {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  font-weight: bold;
+  width: 160px;
+  padding: 7px 21px 7px 20px;
+  font-size: 23px;
+  line-height: 122%;
+  color: #ffffff;
+  img {
+    margin: 0 0 0 16px;
+  }
+}
+
+.society {
+  display: flex;
+  a {
+    margin: 0 17.5px;
+    &:first-child {
+      margin: 0 17.5px 0 0;
+    }
+    &:last-child {
+      margin: 0 0 0 17.5px;
+    }
+  }
+}
+
+@media screen and (max-width: 1276px) {
+  .history {
+    margin: 120px 53px 0 53px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .history {
+    margin: 70px 21px 0 21px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+
+  .cardGroup {
+    margin: 40px 0 0 0;
+  }
+
+  .card {
+    height: auto;
+    min-height: 455px;
+    padding: 30px;
+    margin: 10px 0;
+    border-radius: 20px;
+  }
+
+  .cardTitle {
+    font-size: 23px;
+    line-height: 120%;
+    letter-spacing: 0.04em;
+  }
+
+  .cardBody {
+    margin: 20px 0 0 0;
+    font-size: 16px;
+  }
+
+  .cardLink {
+    font-size: 16px;
+    line-height: 142%;
+  }
+
+  .society {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 841px) {
+  .society {
+    a {
+      &:hover {
+        text-decoration: underline;
+      }
+      &:active {
+        text-decoration: underline;
+        color: #efa501;
+      }
+    }
+  }
+
+  .cardLink {
+    &:hover {
+      background: #286562;
+      border-radius: 50px;
+    }
+    &:active {
+      background: #efa501;
+    }
+  }
+
+  .card {
+    @for $count from 1 to 4 {
+      &:nth-child(#{$count}) {
+        &:hover {
+          background-size: auto 120%;
+        }
+      }
+    }
+  }
+}

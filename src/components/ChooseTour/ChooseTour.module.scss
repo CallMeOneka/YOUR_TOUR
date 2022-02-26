@@ -1,0 +1,196 @@
+.chooseTour {
+  max-width: 1170px;
+  margin: 135px auto 0 auto;
+}
+
+.chooseLinks {
+  padding: 0;
+  margin: 35px 0 0 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.link {
+  margin: 0 15px;
+  font-weight: bold;
+  font-size: 23px;
+  line-height: 122%;
+  color: #1b1f2b;
+  cursor: pointer;
+
+  &.active {
+    color: #efa501;
+    border-bottom: 2px solid #efa501;
+    padding: 0 0 6px 0;
+  }
+
+  &:first-child {
+    margin: 0 15px 0 0;
+  }
+
+  &:last-child {
+    margin: 0 0 0 15px;
+  }
+}
+
+.chooseCardsBlock {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(auto-fit, minmax(318px, 1fr));
+  margin: 100px 0 0 0;
+  gap: 30px 30px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 50px;
+
+  height: 531px;
+  overflow: hidden;
+  @for $count from 1 to 7 {
+    &:nth-child(#{$count}) {
+      background: linear-gradient(
+          360deg,
+          rgba(0, 0, 0, 0.4) 0%,
+          rgba(0, 0, 0, 0.06) 48.44%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url("./../../assets/cards/" + $count + ".png") center no-repeat;
+      background-size: 100% auto;
+      transition: background-size 300ms ease;
+    }
+  }
+}
+
+.cardTitle {
+  margin: 50px 50px 0 50px;
+  font-size: 35px;
+  font-weight: 500;
+  color: #fff;
+  min-width: 268px;
+  line-height: 122%;
+}
+
+.cardText {
+  min-width: 268px;
+  margin: 16px 50px 0 50px;
+  flex-grow: 1;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 142%;
+  letter-spacing: -0.01em;
+  color: #fff;
+}
+
+.cardLink {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  width: 160px;
+  margin: 0 50px 50px 50px;
+  padding: 7px 21px 7px 20px;
+  font-size: 23px;
+  line-height: 122%;
+  color: #ffffff;
+  img {
+    margin: 0 0 0 16px;
+  }
+}
+
+@media screen and (max-width: 1276px) {
+  .chooseTour {
+    margin: 135px 53px 0 53px;
+  }
+  .chooseCardsBlock {
+    gap: 18px 18px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .chooseTour {
+    margin: 75px 21px 0 21px;
+  }
+  .chooseCardsBlock {
+    margin: 50px 0 0 0;
+    width: 100%;
+  }
+
+  .chooseLinks {
+    flex-wrap: wrap;
+  }
+  .link {
+    font-size: 16px;
+    line-height: 142%;
+    margin: 0 5px;
+    &:first-child {
+      margin: 0 5px 0 0;
+    }
+
+    &:last-child {
+      margin: 0 0 0 5px;
+    }
+  }
+
+  .cardTitle {
+    margin: 25px 25px 13px 25px;
+    font-size: 23px;
+    line-height: 120%;
+  }
+  .cardText {
+    margin: 0 25px;
+    font-size: 16px;
+    line-height: 142%;
+  }
+  .cardLink {
+    margin: 0 0 25px 25px;
+  }
+
+  .card {
+    height: auto;
+    min-width: 318px;
+    min-height: 318px;
+  }
+}
+
+@media screen and (min-width: 841px) {
+  .cardLink {
+    &:hover {
+      background: #286562;
+      border-radius: 50px;
+    }
+    &:active {
+      background: #efa501;
+    }
+  }
+
+  .link {
+    &:hover {
+      border-bottom: 2px solid #1b1f2b;
+    }
+  }
+  .card {
+    @for $count from 1 to 7 {
+      &:nth-child(#{$count}) {
+        &:hover {
+          background-size: 120% auto;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1276px) and (min-width: 1096px) {
+  .card {
+    @for $count from 1 to 7 {
+      &:nth-child(#{$count}) {
+        background-size: auto 100%;
+
+        &:hover {
+          background-size: auto 120%;
+        }
+      }
+    }
+  }
+}
