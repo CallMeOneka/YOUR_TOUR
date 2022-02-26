@@ -21,6 +21,7 @@
   .logo {
     display: block;
   }
+
   .blackLogo {
     display: none;
   }
@@ -131,29 +132,36 @@
   .navbar {
     display: none;
   }
+
   .headerTitle {
     font-size: 34px;
     line-height: 112%;
     letter-spacing: 0.02em;
   }
+
   .headerText {
     font-size: 16px;
     line-height: 142%;
   }
+
   .headerButton {
     font-size: 16px;
     line-height: 142%;
   }
+
   .headerPhone {
     font-size: 16px;
     line-height: 142%;
   }
+
   .logo {
     width: 133px;
   }
+
   .blackLogo {
     width: 133px;
   }
+
   .headerTitleContainer {
     height: 400px;
   }
@@ -178,6 +186,7 @@
     &:hover {
       background: #efa501;
     }
+
     &:active {
       background: #f8e6be;
     }

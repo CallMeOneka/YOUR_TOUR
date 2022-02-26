@@ -46,9 +46,9 @@
   flex-direction: column;
   justify-content: space-around;
   border-radius: 50px;
-
   height: 531px;
   overflow: hidden;
+
   @for $count from 1 to 7 {
     &:nth-child(#{$count}) {
       background: linear-gradient(
@@ -94,6 +94,7 @@
   font-size: 23px;
   line-height: 122%;
   color: #ffffff;
+
   img {
     margin: 0 0 0 16px;
   }
@@ -103,6 +104,7 @@
   .chooseTour {
     margin: 135px 53px 0 53px;
   }
+
   .chooseCardsBlock {
     gap: 18px 18px;
   }
@@ -112,6 +114,7 @@
   .chooseTour {
     margin: 75px 21px 0 21px;
   }
+
   .chooseCardsBlock {
     margin: 50px 0 0 0;
     width: 100%;
@@ -120,10 +123,12 @@
   .chooseLinks {
     flex-wrap: wrap;
   }
+
   .link {
     font-size: 16px;
     line-height: 142%;
     margin: 0 5px;
+
     &:first-child {
       margin: 0 5px 0 0;
     }
@@ -138,11 +143,13 @@
     font-size: 23px;
     line-height: 120%;
   }
+
   .cardText {
     margin: 0 25px;
     font-size: 16px;
     line-height: 142%;
   }
+
   .cardLink {
     margin: 0 0 25px 25px;
   }
@@ -160,6 +167,7 @@
       background: #286562;
       border-radius: 50px;
     }
+
     &:active {
       background: #efa501;
     }

@@ -47,11 +47,13 @@
   &:hover {
     cursor: pointer;
   }
+
   &:focus-visible,
   &:focus {
     outline: none;
     border: 1px solid #a6a6a6;
   }
+
   &::placeholder {
     color: #a6a6a6;
   }
@@ -70,9 +72,11 @@
   text-transform: uppercase;
   font-size: 20px;
   line-height: 142%;
+
   &::-webkit-calendar-picker-indicator {
     opacity: 0;
   }
+
   &::placeholder {
     color: #a6a6a6;
   }
@@ -187,6 +191,7 @@
   background-color: transparent;
   border: 2px solid #1b1f2b;
   border-radius: 50%;
+
   &:after {
     content: "";
     position: absolute;
@@ -228,17 +233,21 @@
   font-size: 17px;
   line-height: 142%;
   cursor: pointer;
+
   b {
     color: #1b1f2b;
     cursor: pointer;
+
     &:hover {
       text-decoration: underline;
     }
+
     &:active {
       text-decoration: underline;
       color: #286562;
     }
   }
+
   input {
     position: absolute;
     opacity: 0;
@@ -298,9 +307,11 @@
   color: #ffffff;
   background: #286562;
   margin: 0 30px 0 0;
+
   &:hover {
     background: #3b7e7b;
   }
+
   &:active {
     background: #627f7e;
   }
@@ -309,9 +320,11 @@
 .cancelButton {
   background: #e0f0e5;
   color: #286562;
+
   &:hover {
     background: #f1f3f2;
   }
+
   &:active {
     background: #d9dfdb;
   }
@@ -337,12 +350,15 @@
   .assembleTour {
     margin: 135px 53px 0 53px;
   }
+
   .formInputs {
     grid-template-columns: repeat(auto-fill, minmax(281px, 1fr));
   }
+
   .form {
     padding: 60px;
   }
+
   .textInput {
     max-width: none;
   }
@@ -350,6 +366,7 @@
   .select {
     max-width: none;
   }
+
   .dateInput {
     max-width: none;
   }
@@ -365,6 +382,7 @@
     font-size: 16px;
     line-height: 142%;
   }
+
   .formInputs {
     row-gap: 30px;
   }
@@ -378,6 +396,7 @@
   .formItemInput {
     margin: 0;
   }
+
   .comment {
     margin: 30px 0 0 0;
   }
@@ -390,6 +409,7 @@
   .textInput {
     padding: 10px;
     font-size: 16px;
+
     &::placeholder {
       font-size: 16px;
       line-height: 142%;
@@ -399,6 +419,7 @@
   .dropdownInput {
     padding: 10px;
     font-size: 16px;
+
     &::placeholder {
       font-size: 16px;
       line-height: 142%;
@@ -407,6 +428,7 @@
   .dateInput {
     font-size: 16px;
     padding: 10px;
+
     &::placeholder {
       font-size: 16px;
       line-height: 142%;
@@ -415,13 +437,16 @@
   .textarea {
     max-height: 132px;
   }
+
   .radioLabel {
     font-size: 16px;
     margin-bottom: 0;
   }
+
   .checkmark {
     height: 20px;
     width: 20px;
+
     &:after {
       top: 2px;
       left: 2px;
@@ -431,16 +456,19 @@
   .checkbox {
     margin: 30px 0 0 0;
   }
+
   .checkboxLabel {
     display: inline-block;
     font-size: 16px;
     padding: 0 0 0 27px;
     box-sizing: content-box;
   }
+
   .checkboxCheckmark {
     top: 0px;
     height: 20px;
     width: 20px;
+
     &::after {
       top: 1px;
       left: 6px;
@@ -451,11 +479,13 @@
     display: flex;
     justify-content: space-between;
   }
+
   .button {
     width: 134px;
     height: 47px;
     font-size: 16px;
   }
+
   .acceptButton {
     margin: 0;
   }

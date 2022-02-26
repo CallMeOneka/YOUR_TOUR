@@ -28,6 +28,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
   @for $count from 1 to 4 {
     &:nth-child(#{$count}) {
       background: linear-gradient(
@@ -77,6 +78,7 @@
   font-size: 23px;
   line-height: 122%;
   color: #ffffff;
+
   img {
     margin: 0 0 0 16px;
   }
@@ -84,11 +86,14 @@
 
 .society {
   display: flex;
+
   a {
     margin: 0 17.5px;
+
     &:first-child {
       margin: 0 17.5px 0 0;
     }
+
     &:last-child {
       margin: 0 0 0 17.5px;
     }
@@ -149,6 +154,7 @@
       &:hover {
         text-decoration: underline;
       }
+
       &:active {
         text-decoration: underline;
         color: #efa501;
@@ -161,6 +167,7 @@
       background: #286562;
       border-radius: 50px;
     }
+
     &:active {
       background: #efa501;
     }

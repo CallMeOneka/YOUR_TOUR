@@ -37,15 +37,18 @@
 .galleryItem {
   margin: 15px;
   height: 300px;
+
   img {
     width: 100%;
     border-radius: 50px;
     height: 100%;
     object-fit: cover;
   }
+
   &:first-child {
     margin: 15px 15px 15px 0;
   }
+
   &:last-child {
     margin: 15px 0 15px 15px;
   }
@@ -67,6 +70,7 @@
     &:first-child {
       margin: 15px 10px 15px 0;
     }
+
     &:last-child {
       margin: 15px 0 15px 10px;
     }
@@ -77,12 +81,15 @@
   .photo {
     margin: 75px 21px 0 21px;
   }
+
   .text {
     font-size: 16px;
   }
+
   .gallery {
     margin: 35px 0 0 0;
   }
+
   .galleryItem {
     margin: 9px;
     height: auto;
@@ -99,6 +106,7 @@
     &:first-child {
       margin: 9px 9px 9px 0;
     }
+
     &:last-child {
       margin: 9px 0 9px 9px;
     }
